@@ -64,7 +64,8 @@
 
 \usepackage{mathptmx} %set math font to match
 
-\usepackage[super,sort]{natbib} %use sorted superscripts for references
+%\usepackage[super,sort,compress]{natbib} %use sorted superscripts for references and compress runs of numbers
+\usepackage[sort,compress]{natbib} %use sorted superscripts for references and compress runs of numbers
 
 %\renewcommand{\bibname}{{REFERENCES CITED}}
 
@@ -72,7 +73,7 @@
 
 \pagestyle{empty} %%delete the number at the bottom of the page
 
-\bibliographystyle{apalike}
+\bibliographystyle{unsrt}
 \ifluatex
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
@@ -112,7 +113,7 @@ human population.
 
 \begin{figure}[ht!]
 \includegraphics[width=\textwidth]{Fig1.png} 
-\caption{Project overview. Breeding schematics show generation of A) DO-\textit{Tsc1} and B) DO-\textit{Tsc2} mice by crossing a DO female to an inbred mouse carrying a \textit{Tsc1} or \textit{Tsc2} null allele. DO-\textit{Tsc1} and DO-\textit{Tsc2} mice will be used in both aims of this proposal. Both mouse subpopulations will be run through all phenotyping pipelines and will have brain, kidneys, lung, liver, and heart harvested. RNA sequencing will be performed in brain for the DO-\textit{Tsc1} subpopulation and kidney for the DO-\textit{Tsc2} subpopulation. We will use AI technology to quantify C) seizures and D) histological phenotypes in all mice. We will map TSC-related phenotypic outcomes to E) individual QTL and F) to genetic interaction networks. G) Gene expression will be used as a mediator of genetic effects on phenotypes to identify molecular pathways influencing tumor and neurological outcomes.
+\caption{\textbf{Project overview.} Breeding schematics show generation of A) DO-\textit{Tsc1} and B) DO-\textit{Tsc2} mice by crossing a DO female to an inbred mouse carrying a \textit{Tsc1} or \textit{Tsc2} null allele. DO-\textit{Tsc1} and DO-\textit{Tsc2} mice will be used in both aims of this proposal. Both mouse subpopulations will be run through all phenotyping pipelines and will have brain, kidneys, lung, liver, and heart harvested. RNA sequencing will be performed in brain for the DO-\textit{Tsc1} subpopulation and kidney for the DO-\textit{Tsc2} subpopulation. We will use AI technology to quantify C) seizures and D) histological phenotypes in all mice. We will map TSC-related phenotypic outcomes to E) individual QTL and F) to genetic interaction networks. G) Gene expression will be used as a mediator of genetic effects on phenotypes to identify molecular pathways influencing tumor and neurological outcomes.
 }
 \label{fig:overview}
 \end{figure}
@@ -121,8 +122,7 @@ The \textbf{rationale} for this study is that by mapping genetic
 modifiers, we will identify novel genes and pathways that can be
 therapeutically targeted to mitigate poor outcomes. Although current
 therapies that directly target mTOR signaling show promise in treating
-TSC-associated conditions
-\cite{30760308, 29438097, 30760308, 29438097, 15578690, 20235887},
+TSC-associated conditions \cite{30760308, 29438097, 15578690, 20235887},
 significant challenges remain. Indeed, some TSC tumors are unaffected by
 treatment with rapamycin
 \cite{15557109, 20235887, 25347447, 24395886, 22457331}, and both
@@ -145,6 +145,13 @@ in haploinsufficiency mouse models of TSC, providing a tractable
 experimental platform for genetic discovery. Here, we propose to use
 natural genetic variation in a population-based model of TSC to identify
 additional molecular pathways that drive variation in TSC outcomes.
+
+\begin{figure}[ht!]
+\includegraphics[width=0.8\textwidth]{Fig2.png} 
+\caption{\textbf{Previous experiments demonstrated that genetic background modifies seizure outcomes in a haploinsufficiency mouse model of TSC.} A) Breeding schematic describing generation of \textit{Tsc1}$^{+/-}$ mice on three different genetic backgrounds (B6, D2, and BXD87). B) Diagram and image of wireless EEG setup for seizure monitoring. C) Of all mice tested only female BXD87-HET- mice experienced seizures. D) Seizure counts for individual female BXD87-HET mice. E) Example EEG trace showing electrographic evidence of a seizure in a BXD87-HET mouse. All seizures were confirmed with concurrent video.
+}
+\label{fig:bxd}
+\end{figure}
 
 \textit{\underline{Genetic modifiers of seizure outcomes exist in a haploinsufficiency mouse model of TSC}}.
 In \textbf{Aim 1} we will genetically map modifiers of neurological
@@ -178,30 +185,22 @@ haploinsufficiency models of spontaneous seizures have been reported
 before; however, in these models early-life epilepsy resolved by
 post-natal day 19 \cite{25081057}, well before adulthood, and hence does
 not recapitulate the chronic epilepsy of the most severely affected
-human patients.
-
-\begin{figure}[ht!]
-\includegraphics[width=\textwidth]{Fig2.png} 
-\caption{Previous experiments demonstrated that genetic background modifies seizure outcomes in a haploinsufficiency mouse model of TSC. A) Breeding schematic describing generation of \textit{Tsc1}$^{+/-}$ mice on three different genetic backgrounds (B6, D2, and BXD87). B) Diagram and image of wireless EEG setup for seizure monitoring. C) Of all mice tested only female BXD87-HET- mice experienced seizures. D) Seizure counts for individual female BXD87-HET mice. E) Example EEG trace showing electrographic evidence of a seizure in a BXD87-HET mouse. All seizures were confirmed with concurrent video.
-}
-\label{fig:bxd}
-\end{figure}
-
-We can make two important observations about the genetics of epilepsy in
-our BXD87-HET model. First, the appearance of seizures in BXD87, but not
-the parent strains B6 and D2, implies that there must be at least two
-genetic modifiers in BXD87 responsible for epilepsy; If there were only
-one, we would have observed seizures in either B6-HET or D2-HET mice.
-Second, we observed seizures only in around half of the female BXD87-HET
-mice. Based on our cross design with a B6-\textit{Tsc1}\(^{+/-}\) dam
-(Fig. \ref{fig:bxd}A), we infer that one of the modifier alleles may be
-on the X chromosome and that incomplete penetrance may be due to random
-X inactivation \cite{15818384, 9618446}. We are currently testing this
-hypothesis, which is out of the scope of this project. However, to
-maximize our chance of detecting an X-linked modifier in this study, we
-will reverse the cross so that the sire is the inbred carrier and the
-dam is the genetically diverse, non-carrier. In this design, progeny of
-all sexes will have genetic variation on the X chromosome.
+human patients. We can make two important observations about the
+genetics of epilepsy in our BXD87-HET model. First, the appearance of
+seizures in BXD87, but not the parent strains B6 and D2, implies that
+there must be at least two genetic modifiers in BXD87 responsible for
+epilepsy; If there were only one, we would have observed seizures in
+either B6-HET or D2-HET mice. Second, we observed seizures only in
+around half of the female BXD87-HET mice. Based on our cross design with
+a B6-\textit{Tsc1}\(^{+/-}\) dam (Fig. \ref{fig:bxd}A), we infer that
+one of the modifier alleles may be on the X chromosome and that
+incomplete penetrance may be due to random X inactivation
+\cite{15818384, 9618446}. We are currently testing this hypothesis,
+which is out of the scope of this project. However, to maximize our
+chance of detecting an X-linked modifier in this study, we will reverse
+the cross so that the sire is the inbred carrier and the dam is the
+genetically diverse, non-carrier. In this design, progeny of all sexes
+will have genetic variation on the X chromosome.
 
 Our data above demonstrate that the polygenic combination of variants
 inherited by BXD87 from the B6 and D2 strains cannot suppress
@@ -214,8 +213,8 @@ BXD87 is an outlier strain (low hippocampal volume, poor spatial memory
 performance) \citep{26449520}. Briefly, we performed SNP association
 mapping for each trait individually and combined them using a Bayesian
 mixture model \citep{22396665} to identify SNPs explaining BXD87's
-outlier status (Fig. meta). The top-ranked SNP overall was on chromosome
-4 and linked to the gene \textit{Gabbr2}. The human ortholog,
+outlier status (Fig. \ref{fig:meta}). The top-ranked SNP overall was on
+chromosome 4 and linked to the gene \textit{Gabbr2}. The human ortholog,
 \textit{GABBR2}, has recently been implicated as a significant epilepsy
 modifier gene in TSC (Farach et al., abstract to the International TSC
 Research Conference 2021). The unlinked locus with the next most
@@ -226,10 +225,16 @@ mTORC1 signaling \citep{26740621, 30804504}. This analysis strongly
 suggests that: 1) genetic modifiers of baseline phenotypes in mice can
 predispose strains to dramatically different TSC outcomes, and 2) mouse
 modifier genes may translate directly to human TSC. While this analysis
-is only suggestive, through gene-expression and genetic mapping studies
-in this proposal, we will be able to validate the locations of TSC
+is only suggestive, we will be able to validate the locations of TSC
 modifier alleles and potential specific roles for \textit{Gabbr2} and
-\textit{Ubqln2}.
+\textit{Ubqln2} through gene-expression and genetic mapping studies in
+this proposal.
+
+\begin{figure}[ht!]
+\includegraphics[width=\textwidth]{Fig3.png} 
+\caption{\textbf{Meta-analysis of outlier phenotypes in BXD87 mice} Using the Mouse Phenome Database, we re-analyzed neurological traits (hippocampal volume and radial arm maze performance) for which BXD87 is an outlier among all BXD strains. The top two loci were on chr 4 and chr X, and the top SNPs were linked to \textit{Gabbr2} and \textit{Ubqln2}, respectively. Both genes have a strongly plausible role in TSC-associated epilepsy.}
+\label{fig:meta}
+\end{figure}
 
 \textit{\underline{Genetic modifiers of tumor outcomes exist in haploinsufficiency mouse models of TSC.}}
 In \textbf{Aim 2} we will genetically map modifiers of tumor outcomes in
@@ -539,8 +544,6 @@ mapping because they allow inference of the causal importance of genes
 and pathways, even when background modifier effects are highly
 polygenic.
 
-\pagebreak
-
 \textbf{Feasibility:} As feasibility data for this proposal, we trained
 an AI model \textit{de novo} to detect LORR in manually coded frames
 from videos of 25 mice during pentylenetetrazole-induced seizures (Fig.
@@ -556,8 +559,8 @@ compute animal segmentations and pose-estimation phenotypes from which
 we can score standard home cage behaviors, such as grooming.
 
 \begin{figure}[ht!]
-\includegraphics[width=\textwidth]{Fig3.png} 
-\caption{AI classification of seizures. A) Still images of normal behavior (top row) and mice experiencing seizures (bottom row). The bottom row shows the loss-of-righting reflex (LORR) that is classified by the AI model as a seizure. B) Confusion matrix showing the counts of correct and incorrect classifications by the AI along with calculated accuracy, recall, and precision of the model. C) A time-varying probability of LORR predicted by the AI model at each frame of a video (blue trace). High probabilities indicate frames for which the AI predicted that the mouse had fallen over. Pink areas highlight frames for which an expert reviewer indicated that the mouse had fallen over.}
+\includegraphics[width=\textwidth]{Fig4.png} 
+\caption{\textbf{AI classification of seizures.} A) Still images of normal behavior (top row) and mice experiencing seizures (bottom row). The bottom row shows the loss-of-righting reflex (LORR) that is classified by the AI model as a seizure. B) Confusion matrix showing the counts of correct and incorrect classifications by the AI along with calculated accuracy, recall, and precision of the model. C) A time-varying probability of LORR predicted by the AI model at each frame of a video (blue trace). High probabilities indicate frames for which the AI predicted that the mouse had fallen over. Pink areas highlight frames for which an expert reviewer indicated that the mouse had fallen over.}
 \label{fig:LORR}
 \end{figure}
 
@@ -670,12 +673,10 @@ for mapping genetic modifiers of histological outcomes using AI-derived
 traits.
 
 \begin{figure}[ht!]
-\includegraphics[width=\textwidth]{Fig4.png} 
-\caption{Previous study demonstrating feasibility of mapping novel histological phenotypes generated by AI models. A) QTL map for an age-related, AI-generated histological feature. This feature had a genome-wide significant QTL on mouse chromosome 17. The solid and dashed red lines indicate genome-wide significance of 1\% and 5\% respectively. B) Montage of images comparing glomeruli that scored high and low for this mapped feature. High- and low-scoring glomeruli differed in mesangial matrix expansion (darker purple staining) and cellularity (number of nuclei per glomerulus). C) Founder allele effects at the QTL for this feature. Each founder is represented by one color. NZO alleles (light blue) were associated with better outcomes than A/J alleles (yellow).}
+\includegraphics[width=0.8\textwidth]{Fig5.png} 
+\caption{\textbf{Previous study demonstrating feasibility of mapping novel histological phenotypes generated by AI models.} A) QTL map for an age-related, AI-generated histological feature. This feature had a genome-wide significant QTL on mouse chromosome 17. The solid and dashed red lines indicate genome-wide significance of 1\% and 5\% respectively. B) Montage of images comparing glomeruli that scored high and low for this mapped feature. High- and low-scoring glomeruli differed in mesangial matrix expansion (darker purple staining) and cellularity (number of nuclei per glomerulus). C) Founder allele effects at the QTL for this feature. Each founder is represented by one color. NZO alleles (light blue) were associated with better outcomes than A/J alleles (yellow).}
 \label{fig:histo}
 \end{figure}
-
-\pagebreak
 
 \textbf{Potential problems and alternative strategies:} We anticipate
 two potential problems. First, bulk RNA sequencing of kidney tissues
@@ -711,8 +712,6 @@ review each whole-slide image in its entirety, manually annotating
 abnormalities. These images will become public upon project completion
 for researchers in the wider community to apply their expertise and
 define novel phenotypes.
-
-\pagebreak
 
 \textbf{Overall timeline}
 
