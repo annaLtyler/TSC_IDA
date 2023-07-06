@@ -3,44 +3,49 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: grant.aux
 The style file: apalike.bst
 Database file #1: pmid_refs.bib
-You've used 130 entries,
+Repeated entry---line 1521 of file pmid_refs.bib
+ : @article{26449520
+ :                  ,
+I'm skipping whatever remains of this entry
+You've used 134 entries,
             1935 wiz_defined-function locations,
-            1154 strings with 38139 characters,
-and the built_in function-call counts, 75743 in all, are:
-= -- 6693
-> -- 5876
-< -- 21
-+ -- 2200
-- -- 2196
-* -- 7815
-:= -- 13648
-add.period$ -- 389
-call.type$ -- 130
-change.case$ -- 1746
-chr.to.int$ -- 128
-cite$ -- 130
-duplicate$ -- 1840
-empty$ -- 3708
-format.name$ -- 2350
-if$ -- 13853
+            1175 strings with 39075 characters,
+and the built_in function-call counts, 77983 in all, are:
+= -- 6896
+> -- 6028
+< -- 22
++ -- 2256
+- -- 2252
+* -- 8046
+:= -- 14043
+add.period$ -- 401
+call.type$ -- 134
+change.case$ -- 1794
+chr.to.int$ -- 132
+cite$ -- 134
+duplicate$ -- 1896
+empty$ -- 3833
+format.name$ -- 2412
+if$ -- 14271
 int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 129
-newline$ -- 650
-num.names$ -- 390
-pop$ -- 1512
+missing$ -- 133
+newline$ -- 670
+num.names$ -- 402
+pop$ -- 1551
 preamble$ -- 1
-purify$ -- 1748
+purify$ -- 1796
 quote$ -- 0
-skip$ -- 1358
+skip$ -- 1399
 stack$ -- 0
-substring$ -- 4153
-swap$ -- 162
+substring$ -- 4308
+swap$ -- 166
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 776
+type$ -- 800
 warning$ -- 0
-while$ -- 454
+while$ -- 468
 width$ -- 0
-write$ -- 1679
+write$ -- 1731
+(There was 1 error message)

@@ -60,13 +60,17 @@
 \setcounter{secnumdepth}{-\maxdimen} % remove section numbering
 \usepackage{setspace} \singlespacing
 
-\usepackage{times}
+\usepackage{times} %set font to Times New Roman 
 
-\usepackage{mathptmx}
+\usepackage{mathptmx} %set math font to match
 
-\usepackage[super,sort]{natbib}
+\usepackage[super,sort]{natbib} %use sorted superscripts for references
 
-\pagestyle{empty} %%in order to delete the number at the bottom of the page
+%\renewcommand{\bibname}{{REFERENCES CITED}}
+
+\renewcommand{\bibsection}{\subsection*{REFERENCES CITED}} %rename references section to match requirements
+
+\pagestyle{empty} %%delete the number at the bottom of the page
 
 \bibliographystyle{apalike}
 \ifluatex
@@ -108,7 +112,7 @@ human population.
 
 \begin{figure}[ht!]
 \includegraphics[width=\textwidth]{Fig1.png} 
-\caption{Project overview. Breeding schematics show generation of A) DO-\textit{Tsc1} and B) DO-\textit{Tsc2} mice by crossing a DO female to an inbred mouse carrying a \textit{Tsc1} or \textit{Tsc2} null allele. DO-\textit{Tsc1} and DO-\textit{Tsc2} mice will be used in both aims of this proposal. Both mouse subpopulations will be run through all phenotyping pipelines and will have brain, kidneys, lung, liver, and heart harvested. RNA sequencing will be performed in brain for the DO-\textit{Tsc1} subpopulation and kidney for the DO-\textit{Tsc2} subpopulation. We will use AI technology to quantify C) seizures and D) histological phenotypes in all mice. We will map TSC-related phenotypic outcomes as E) individual QTL and F) as genetic interaction networks. G) Gene expression will be used as a mediator of genetic effects on phenotypes to identify molecular pathways influencing tumor and neurological outcomes.
+\caption{Project overview. Breeding schematics show generation of A) DO-\textit{Tsc1} and B) DO-\textit{Tsc2} mice by crossing a DO female to an inbred mouse carrying a \textit{Tsc1} or \textit{Tsc2} null allele. DO-\textit{Tsc1} and DO-\textit{Tsc2} mice will be used in both aims of this proposal. Both mouse subpopulations will be run through all phenotyping pipelines and will have brain, kidneys, lung, liver, and heart harvested. RNA sequencing will be performed in brain for the DO-\textit{Tsc1} subpopulation and kidney for the DO-\textit{Tsc2} subpopulation. We will use AI technology to quantify C) seizures and D) histological phenotypes in all mice. We will map TSC-related phenotypic outcomes to E) individual QTL and F) to genetic interaction networks. G) Gene expression will be used as a mediator of genetic effects on phenotypes to identify molecular pathways influencing tumor and neurological outcomes.
 }
 \label{fig:overview}
 \end{figure}
@@ -198,6 +202,34 @@ maximize our chance of detecting an X-linked modifier in this study, we
 will reverse the cross so that the sire is the inbred carrier and the
 dam is the genetically diverse, non-carrier. In this design, progeny of
 all sexes will have genetic variation on the X chromosome.
+
+Our data above demonstrate that the polygenic combination of variants
+inherited by BXD87 from the B6 and D2 strains cannot suppress
+TSC-associated epilepsy. Mapping these modifiers only three strains (B6,
+D2, and BXD87) is impossible due to insufficient genetic resolution.
+However, using existing data on the BXD mapping panel available in the
+Mouse Phenome Database \citep{31696236}, we performed a re-analysis of
+hippocampal volume and spatial memory performance phenotypes, for which
+BXD87 is an outlier strain (low hippocampal volume, poor spatial memory
+performance) \citep{26449520}. Briefly, we performed SNP association
+mapping for each trait individually and combined them using a Bayesian
+mixture model \citep{22396665} to identify SNPs explaining BXD87's
+outlier status (Fig. meta). The top-ranked SNP overall was on chromosome
+4 and linked to the gene \textit{Gabbr2}. The human ortholog,
+\textit{GABBR2}, has recently been implicated as a significant epilepsy
+modifier gene in TSC (Farach et al., abstract to the International TSC
+Research Conference 2021). The unlinked locus with the next most
+significant SNP was on the X chromosome. The top SNP in this locus is
+linked to the gene \textit{Ubqln2}, which encodes the protein Ubiquilin
+2. Significantly, human Ubiquilin 2 has been shown to be an activator of
+mTORC1 signaling \citep{26740621, 30804504}. This analysis strongly
+suggests that: 1) genetic modifiers of baseline phenotypes in mice can
+predispose strains to dramatically different TSC outcomes, and 2) mouse
+modifier genes may translate directly to human TSC. While this analysis
+is only suggestive, through gene-expression and genetic mapping studies
+in this proposal, we will be able to validate the locations of TSC
+modifier alleles and potential specific roles for \textit{Gabbr2} and
+\textit{Ubqln2}.
 
 \textit{\underline{Genetic modifiers of tumor outcomes exist in haploinsufficiency mouse models of TSC.}}
 In \textbf{Aim 2} we will genetically map modifiers of tumor outcomes in
@@ -337,9 +369,9 @@ CMV-Cre line, which expresses Cre recombinase at the germline, causing
 germline heterozygosity of \textit{Tsc1} LoF. For the DO-\textit{Tsc2}
 subpopulation, we will use A/J-\textit{Tsc2}\(^{+/-}\) mice as the
 carrier sire. These mice are not commercially available, so the JAX
-Genetic Engineering Technologies (GET) group will generate this line de
-novo using CRISPR/Cas9 to knock out exons 5 through 8 in the A/J
-background, matching the construct used in prior reports
+Genetic Engineering Technologies (GET) group will generate this line
+\textit{de novo} using CRISPR/Cas9 to knock out exons 5 through 8 in the
+A/J background, matching the construct used in prior reports
 \cite{10491404, 20235887}. In both subpopulations, we will genotype all
 pups for the TSC mutation before weaning using standard PCR and retain
 pups with a \textit{Tsc1/2} mutation for phenotyping. We will also
@@ -507,6 +539,8 @@ mapping because they allow inference of the causal importance of genes
 and pathways, even when background modifier effects are highly
 polygenic.
 
+\pagebreak
+
 \textbf{Feasibility:} As feasibility data for this proposal, we trained
 an AI model \textit{de novo} to detect LORR in manually coded frames
 from videos of 25 mice during pentylenetetrazole-induced seizures (Fig.
@@ -523,7 +557,7 @@ we can score standard home cage behaviors, such as grooming.
 
 \begin{figure}[ht!]
 \includegraphics[width=\textwidth]{Fig3.png} 
-\caption{AI classification of seizures. A) Still images of normal behavior (top row) and mice experiencing seizures (bottom row). The bottom row shows the loss-of-righting reflex (LORR) that is classified by the AI model as a seizure. B) Confusion matrix showing the counts of correct and incorrect classifications by the AI along with calculated accuracy, recall, and precision. C) A time-varying probability of LORR predicted by the AI model at each frame of a video (blue trace). High probabilities indicate frames for which the AI predicts that the mouse has fallen over. Pink areas highlight frames for which an expert reviewer has indicated that the mouse has fallen over.}
+\caption{AI classification of seizures. A) Still images of normal behavior (top row) and mice experiencing seizures (bottom row). The bottom row shows the loss-of-righting reflex (LORR) that is classified by the AI model as a seizure. B) Confusion matrix showing the counts of correct and incorrect classifications by the AI along with calculated accuracy, recall, and precision of the model. C) A time-varying probability of LORR predicted by the AI model at each frame of a video (blue trace). High probabilities indicate frames for which the AI predicted that the mouse had fallen over. Pink areas highlight frames for which an expert reviewer indicated that the mouse had fallen over.}
 \label{fig:LORR}
 \end{figure}
 
@@ -637,49 +671,53 @@ traits.
 
 \begin{figure}[ht!]
 \includegraphics[width=\textwidth]{Fig4.png} 
-\caption{Previous study demonstrating feasibility of mapping novel histological phenotypes generated by AI models. A) An age-related, AI-generated histological feature mapped to a genome-wide significant QTL on mouse chromosome 17. The solid and dashed red lines indicate genome-wide significance of 1\% and 5\% respectively. B) Montage of images comparing glomeruli that scored high and low for this mapped feature. High- and low-scoring glomeruli differ in mesangial matrix expansion (darker purple staining), cellularity (number of nuclei per glomerulus). C) Founder allele effects at the QTL for this feature. Each founder is represented by one color. NZO alleles (light blue) were associated with better outcomes than A/J alleles (yellow).}
+\caption{Previous study demonstrating feasibility of mapping novel histological phenotypes generated by AI models. A) QTL map for an age-related, AI-generated histological feature. This feature had a genome-wide significant QTL on mouse chromosome 17. The solid and dashed red lines indicate genome-wide significance of 1\% and 5\% respectively. B) Montage of images comparing glomeruli that scored high and low for this mapped feature. High- and low-scoring glomeruli differed in mesangial matrix expansion (darker purple staining) and cellularity (number of nuclei per glomerulus). C) Founder allele effects at the QTL for this feature. Each founder is represented by one color. NZO alleles (light blue) were associated with better outcomes than A/J alleles (yellow).}
 \label{fig:histo}
 \end{figure}
 
-\textit{\underline{Potential problems and alternative strategies:}} We
-can anticipate two potential problems. First, bulk RNA sequencing of
-kidney tissues necessarily mixes healthy tissue and tumor tissue,
-possibly limiting our ability to detect causally important
-transcriptomic changes relative to ``passenger'' changes. We can detect
-this by performing mediation analysis in reverse, with phenotypes as the
-mediator and gene expression as the outcome. Individual transcripts that
-are highly ranked in both models (i.e., with transcriptome as a mediator
-and an outcome) will be considered confounded. If this occurs, we will
-cross-reference our kidney expression to existing eQTL data from DO
-kidneys in mice without a TSC insult \cite{33687326}. This will give
-added confidence in specific, genetically encoded transcript changes
-that cannot be due to tumor-composition effects. These data will also
-provide a strong rationale for follow-up proposals to generate
-single-cell and spatial transcriptomic atlases from our biobanked
-samples, from which we can deconvolve our bulk expression
-computationally \cite{30670690}. A second potential problem is that we
-may fail to detect overt lesions using an unsupervised PCA approach.
-While we consider this extremely unlikely, if this occurs, we anticipate
-that it will be due to the heterogeneity of normal tissue structure in
-the DO obscuring the effects of relatively rarer lesional tissue. If our
-PCA montages (see Fig. \ref{fig:histo}B) do not contrast normal tissue
-with lesional tissue, then we will consult with JAX's on-site veterinary
-pathologist to both annotate the learned, non-lesional features and
-provide annotations of lesions that were missed by our analysis. With
-ground-truth labels of novel features, we can train models
-\textit{de novo} to detect such features directly, which we will use as
-an additional phenotype. If lesions are extremely rare, we will apply
-outlier detection methodologies \cite{crammer_needle_2004} to identify
-image tiles that exist far outside the distribution of healthy tissue.
-If all else fails, we will review each whole-slide image in its
-entirety, manually annotating abnormalities. These images will become
-public upon project completion for researchers in the wider community to
-apply their expertise and define novel phenotypes.
+\pagebreak
+
+\textbf{Potential problems and alternative strategies:} We anticipate
+two potential problems. First, bulk RNA sequencing of kidney tissues
+necessarily mixes healthy tissue and tumor tissue, possibly limiting our
+ability to detect causally important transcriptomic changes relative to
+``passenger'' changes. We can detect this by performing mediation
+analysis in reverse, with phenotypes as the mediator and gene expression
+as the outcome. Individual transcripts that are highly ranked in both
+models (i.e., with transcriptome as a mediator and an outcome) will be
+considered confounded. If this occurs, we will cross-reference our
+kidney expression to existing eQTL data from DO kidneys in mice without
+a TSC insult \cite{33687326}. This will give added confidence in
+specific, genetically encoded transcript changes that cannot be due to
+tumor-composition effects. These data will also provide a strong
+rationale for follow-up proposals to generate single-cell and spatial
+transcriptomic atlases from our biobanked samples, from which we can
+deconvolve our bulk expression computationally \cite{30670690}. A second
+potential problem is that we may fail to detect overt lesions using an
+unsupervised PCA approach. While we consider this extremely unlikely, if
+this occurs, we anticipate that it will be due to the heterogeneity of
+normal tissue structure in the DO obscuring the effects of relatively
+rarer lesional tissue. If our PCA montages (see Fig. \ref{fig:histo}B)
+do not contrast normal tissue with lesional tissue, then we will consult
+with JAX's on-site veterinary pathologist to both annotate the learned,
+non-lesional features and provide annotations of lesions that were
+missed by our analysis. With ground-truth labels of novel features, we
+can train models \textit{de novo} to detect such features directly,
+which we will use as an additional phenotype. If lesions are extremely
+rare, we will apply outlier detection methodologies
+\cite{crammer_needle_2004} to identify image tiles that exist far
+outside the distribution of healthy tissue. If all else fails, we will
+review each whole-slide image in its entirety, manually annotating
+abnormalities. These images will become public upon project completion
+for researchers in the wider community to apply their expertise and
+define novel phenotypes.
+
+\pagebreak
 
 \textbf{Overall timeline}
 
 Breeding of the DO-\textit{Tsc1}\(^{+/-}\) mice will begin immediately
-and the first round experimental mice will be available around three
+and the first round of experimental mice will be available around three
 months. Mice will be bred to generate waves of approximately 50 mice.
 Home-cage behavior monitoring will occur continuously as new
 experimental waves arrive. After home-cage monitoring monitoring, mice
@@ -696,10 +734,10 @@ DO-\textit{Tsc1}\(^{+/-}\) and be complete at around 29 months into the
 project. We will perform seizure and behavior analyses continuously
 throughout the study, monitoring model performance and fine-tuning as
 necessary. When all tissues from both subpopulations are collected, we
-will generate histological data in a single batch (by around month 30).
-In the final 6 months, we will perform histological image analysis and
-genetic mapping, draft manuscripts, and prepare follow-up grant
-proposals.
+will generate histological data and perform RNA sequencing in a single
+batch (around month 30). In the final 6 months, we will perform
+histological image analysis and genetic mapping, draft manuscripts, and
+prepare follow-up grant proposals.
 
 \textbf{Integration of aims and project growth:} The aims of this
 project are conceptually and operationally distinct, but form an

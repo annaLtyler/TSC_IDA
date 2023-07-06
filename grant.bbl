@@ -30,6 +30,11 @@ Blair, R.~H., Kliebenstein, D.~J., and Churchill, G.~A. (2012).
 \newblock {{W}hat can causal networks tell us about metabolic pathways?}
 \newblock {\em PLoS Comput Biol}, 8(4):e1002458.
 
+\bibitem[Bogue et~al., 2020]{31696236}
+Bogue, M.~A., Philip, V.~M., Walton, D.~O., Grubb, S.~C., Dunn, M.~H., Kolishovski, G., Emerson, J., Mukherjee, G., Stearns, T., He, H., Sinha, V., Kadakkuzha, B., Kunde-Ramamoorthy, G., and Chesler, E.~J. (2020).
+\newblock {{M}ouse {P}henome {D}atabase: a data repository and analysis suite for curated primary mouse phenotype data}.
+\newblock {\em Nucleic Acids Res}, 48(D1):D716--D723.
+
 \bibitem[Bollen, 1989]{bollen_structural_1989}
 Bollen, K.~A. (1989).
 \newblock {\em Structural equations with latent variables}, volume 210.
@@ -103,6 +108,11 @@ Civelek, M. and Lusis, A.~J. (2014).
 Coffey, A.~R., Smallwood, T.~L., Albright, J., Hua, K., Kanke, M., Pomp, D., Bennett, B.~J., and Sethupathy, P. (2017).
 \newblock {{S}ystems genetics identifies a co-regulated module of liver micro{R}{N}{A}s associated with plasma {L}{D}{L} cholesterol in murine diet-induced dyslipidemia}.
 \newblock {\em Physiol Genomics}, 49(11):618--629.
+
+\bibitem[Coffey et~al., 2016]{26740621}
+Coffey, R.~T., Shi, Y., Long, M.~J., Marr, M.~T., and Hedstrom, L. (2016).
+\newblock {{U}biquilin-mediated {S}mall {M}olecule {I}nhibition of {M}ammalian {T}arget of {R}apamycin {C}omplex 1 (m{T}{O}{R}{C}1) {S}ignaling}.
+\newblock {\em J Biol Chem}, 291(10):5221--5233.
 
 \bibitem[Cornes et~al., 2023]{36649207}
 Cornes, B.~K., Paisie, C., Swanzey, E., Fields, P.~D., Schile, A., Brackett, K., Reinholdt, L.~G., and Srivastava, A. (2023).
@@ -248,6 +258,11 @@ Gupta, Y., Ernst, A.~L., Vorobyev, A., Beltsiou, F., Zillikens, D., Bieber, K., 
 Hackett, J.~B., Glassbrook, J.~E., iz, M.~C., Bross, M., Fielder, A., Dyson, G., Movahhedin, N., McCasland, J., McCarthy-Leo, C., and Gibson, H.~M. (2022).
 \newblock {{A} diversity outbred {F}1 mouse model identifies host-intrinsic genetic regulators of response to immune checkpoint inhibitors}.
 \newblock {\em Oncoimmunology}, 11(1):2064958.
+
+\bibitem[Han and Eskin, 2012]{22396665}
+Han, B. and Eskin, E. (2012).
+\newblock {{I}nterpreting meta-analyses of genome-wide association studies}.
+\newblock {\em PLoS Genet}, 8(3):e1002555.
 
 \bibitem[Hession et~al., 2022]{37091193}
 Hession, L.~E., Sabnis, G.~S., Churchill, G.~A., and Kumar, V. (2022).
@@ -478,6 +493,11 @@ Price, T.~R., Stapleton, D.~S., Schueler, K.~L., Norris, M.~K., Parks, B.~W., Ya
 Que, E., James, K.~L., Coffey, A.~R., Smallwood, T.~L., Albright, J., Huda, M.~N., Pomp, D., Sethupathy, P., and Bennett, B.~J. (2020).
 \newblock {{G}enetic {A}rchitecture {M}odulates {D}iet-{I}nduced {H}epatic m{R}{N}{A} and mi{R}{N}{A} {E}xpression {P}rofiles in {D}iversity {O}utbred {M}ice}.
 \newblock {\em Genetics}, 216(1):241--259.
+
+\bibitem[rk et~al., 2019]{30804504}
+rk, M., Lin, G., Zuo, Z., Mao, D., Watson, E., Mikos, A.~G., and Bellen, H.~J. (2019).
+\newblock {{U}biquilins regulate autophagic flux through m{T}{O}{R} signalling and lysosomal acidification}.
+\newblock {\em Nat Cell Biol}, 21(3):384--396.
 
 \bibitem[Roberts et~al., 2007]{17674098}
 Roberts, A., Pardo-Manuel~de Villena, F., Wang, W., McMillan, L., and Threadgill, D.~W. (2007).

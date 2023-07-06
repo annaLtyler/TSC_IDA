@@ -1,11 +1,15 @@
 \usepackage{setspace} \singlespacing
 
-\usepackage{times}
+\usepackage{times} %set font to Times New Roman 
 
-\usepackage{mathptmx}
+\usepackage{mathptmx} %set math font to match
 
-\usepackage[super,sort]{natbib}
+\usepackage[super,sort]{natbib} %use sorted superscripts for references
 
-\pagestyle{empty} %%in order to delete the number at the bottom of the page
+%\renewcommand{\bibname}{{REFERENCES CITED}}
+
+\renewcommand{\bibsection}{\subsection*{REFERENCES CITED}} %rename references section to match requirements
+
+\pagestyle{empty} %%delete the number at the bottom of the page
 
 \bibliographystyle{apalike}
