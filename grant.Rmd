@@ -58,8 +58,6 @@ The **objective** of this project is to identify novel genetic modifiers of TSC 
 
 **Aim 2: Identify genetic modifiers of tumors in TSC** by: a) mapping genetic modifiers of tumor outcomes in brain, kidney, and lung in our DO-TSC model and b) performing mediation analysis with kidney gene expression to identify the causal pathways driving poor tumor outcomes.
 
-\pagebreak
-
 **D. Research Strategy and Feasibility**
 
 **Aim 1: Identify genetic modifiers of epilepsy and TANDs in TSC**
