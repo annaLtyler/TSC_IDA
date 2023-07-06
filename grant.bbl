@@ -45,6 +45,10 @@ Brabec, J.~L., Lara, M.~K., Tyler, A.~L., and Mahoney, J.~M. (2021).
 \newblock {{S}ystem-{L}evel {A}nalysis of {A}lzheimer's {D}isease {P}rioritizes {C}andidate {G}enes for {N}eurodegeneration}.
 \newblock {\em Front Genet}, 12:625246.
 
+\bibitem[{Broad Institute}, 2023]{picard}
+{Broad Institute} (2023).
+\newblock Picard tools.
+
 \bibitem[Broman et~al., 2019]{30591514}
 Broman, K.~W., Gatti, D.~M., Simecek, P., Furlotte, N.~A., Prins, P., Sen, S., Yandell, B.~S., and Churchill, G.~A. (2019).
 \newblock {{R}/qtl2: {S}oftware for {M}apping {Q}uantitative {T}rait {L}oci with {H}igh-{D}imensional {D}ata and {M}ultiparent {P}opulations}.
@@ -145,6 +149,11 @@ Doerge, R.~W. and Churchill, G.~A. (1996).
 \newblock {{P}ermutation tests for multiple loci affecting a quantitative character}.
 \newblock {\em Genetics}, 142(1):285--294.
 
+\bibitem[Dutta et~al., 2022]{dutta2022multi}
+Dutta, P., Akhter~Sathi, K., and Saiful~Islam, M. (2022).
+\newblock Multi-classification of brain tumor images using transfer learning based deep neural network.
+\newblock In {\em International Conference on Artificial Intelligence for Smart Community: AISC 2020, 17--18 December, Universiti Teknologi Petronas, Malaysia}, pages 927--933. Springer.
+
 \bibitem[Eggermann et~al., 2013]{23249873}
 Eggermann, T., Spengler, S., Denecke, B., Zerres, K., and Mache, C.~J. (2013).
 \newblock {{M}ulti-exon deletion in the {X}{D}{H} gene as a cause of classical xanthinuria}.
@@ -154,6 +163,11 @@ Eggermann, T., Spengler, S., Denecke, B., Zerres, K., and Mache, C.~J. (2013).
 Ewels, P., Magnusson, M., Lundin, S., and ller, M. (2016).
 \newblock {{M}ulti{Q}{C}: summarize analysis results for multiple tools and samples in a single report}.
 \newblock {\em Bioinformatics}, 32(19):3047--3048.
+
+\bibitem[Farooq et~al., 2020]{farooq2020advanced}
+Farooq, M.~A., Khatoon, A., Varkarakis, V., and Corcoran, P. (2020).
+\newblock Advanced deep learning methodologies for skin cancer classification in prodromal stages.
+\newblock {\em arXiv preprint arXiv:2003.06356}.
 
 \bibitem[Fox et~al., 2017]{28127866}
 Fox, J., Ben-Shachar, S., Uliel, S., Svirsky, R., Saitsu, H., Matsumoto, N., and Fattal-Valevski, A. (2017).
@@ -470,6 +484,10 @@ Roberts, A., Pardo-Manuel~de Villena, F., Wang, W., McMillan, L., and Threadgill
 \newblock {{T}he polymorphism architecture of mouse genetic resources elucidated using genome-wide resequencing data: implications for {Q}{T}{L} discovery and systems genetics}.
 \newblock {\em Mamm Genome}, 18(6-7):473--481.
 
+\bibitem[Sanderson et~al., 2023]{jax_github}
+Sanderson, B., Fields, P., and M.W., L. (2023).
+\newblock {JAX NGS Operations Nextflow DSL2 Pipelines}.
+
 \bibitem[Sharma et~al., 2017]{28868251}
 Sharma, N., Sharma, S., Thiek, J.~L., Ahanthem, S.~S., Kalita, A., and Lynser, D. (2017).
 \newblock {{M}aternal and {F}etal {T}uberous {S}clerosis: {D}o {W}e {K}now {E}nough as an {O}bstetrician?}
@@ -505,6 +523,11 @@ Subramanian, A., Tamayo, P., Mootha, V.~K., Mukherjee, S., Ebert, B.~L., Gillett
 \newblock {{G}ene set enrichment analysis: a knowledge-based approach for interpreting genome-wide expression profiles}.
 \newblock {\em Proc Natl Acad Sci U S A}, 102(43):15545--15550.
 
+\bibitem[Szegedy et~al., 2016]{inception}
+Szegedy, C., Vanhoucke, V., Ioffe, S., Shlens, J., and Wojna, Z. (2016).
+\newblock Rethinking the inception architecture for computer vision.
+\newblock In {\em Proceedings of the IEEE conference on computer vision and pattern recognition}, pages 2818--2826.
+
 \bibitem[Takemon et~al., 2021a]{33687326}
 Takemon, Y., Chick, J.~M., Gerdes~Gyuricza, I., Skelly, D.~A., Devuyst, O., Gygi, S.~P., Churchill, G.~A., and Korstanje, R. (2021a).
 \newblock {{P}roteomic and transcriptomic profiling reveal different aspects of aging in the kidney}.
@@ -524,6 +547,10 @@ Tang, Y., Kwiatkowski, D.~J., and Henske, E.~P. (2022).
 Taveira-DaSilva, A.~M. and Moss, J. (2012).
 \newblock {{O}ptimizing treatments for lymphangioleiomyomatosis}.
 \newblock {\em Expert Rev Respir Med}, 6(3):267--276.
+
+\bibitem[{The Jackson Laboratory}, 2022]{haploQA}
+{The Jackson Laboratory} (2022).
+\newblock Haploqa.
 
 \bibitem[Tyler et~al., 2020]{31694854}
 Tyler, A., Mahoney, J.~M., and Carter, G.~W. (2020).

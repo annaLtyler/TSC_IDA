@@ -392,19 +392,19 @@ Genome Technologies Service for 50 base pair, paired-end bulk RNA
 sequencing. Fastq files will be delivered to our group for analysis. We
 will perform read alignment and gene expression quantification using
 custom, publicly available RNA-seq pipelines developed by JAX
-Computational Sciences (GitHub: TheJacksonLaboratory/cs-nf-pipelines
-v.0.3.0). This pipeline performs read trimming to remove sequencing
-barcodes, quantifies gene expression using the RNA-Seq by Expectation
-Maximization (RSEM) algorithm \cite{21816040}, and delivers sample- and
-batch-level summary and quality-control statistics, including Picard
-alignment metrics \{picard\} and a MultiQC \cite{27312411} report. Gene
-expression levels will be normalized using a variance-stabilizing
-transformation \cite{25516281, 23497356} for downstream processing.
+Computational Sciences \cite{jax_github}. This pipeline performs read
+trimming to remove sequencing barcodes, quantifies gene expression using
+the RNA-Seq by Expectation Maximization (RSEM) algorithm
+\cite{21816040}, and delivers sample- and batch-level summary and
+quality-control statistics, including Picard alignment metrics
+\cite{picard} and a MultiQC \cite{27312411} report. Gene expression
+levels will be normalized using a variance-stabilizing transformation
+\cite{25516281, 23497356} for downstream processing.
 
 \textit{\underline{Genotyping and reconstruction of ancestral haplotypes:}}
 For background genotyping, we will use miniMUGA SNP genotyping arrays
 \cite{33067325} to generate SNP-level genotypes for each mouse. We will
-then compute the DO founder haplotypes using HaploQA \{haploQA\}. We
+then compute the DO founder haplotypes using HaploQA \cite{haploQA}. We
 will use haplotypes for genetic mapping \cite{25237114}.
 
 \textit{\underline{Genetic mapping and power analyis:}} We will perform
@@ -519,7 +519,7 @@ compute animal segmentations and pose-estimation phenotypes from which
 we can score standard home cage behaviors, such as grooming.
 
 \begin{figure}[ht!]
-\includegraphics[width=\textwidth]{Fig3.pdf} 
+\includegraphics[width=\textwidth]{Fig3.png} 
 \caption{AI classification of seizures. A) Still images of normal mice (top row) and mice experiencing seizures (bottom row). The bottom row shows the loss-of-righting reflex (LORR) that is classified by the AI as a seizure. B) Confusion matrix showing the counts of correct and incorrect classifications by the AI along with calculated accuracy, recall, and precision. C) A time-varying probability of LORR predicted by the AI at each frame of a video (blue trace). High probabilities indicate frames for which the AI predicts that the mouse has fallen over. Pink areas highlight frames for which an expert reviewer has indicated that the mouse has fallen over.}
 \label{fig:LORR}
 \end{figure}
@@ -577,10 +577,10 @@ will use an AI-based computer vision approach to automatically score the
 extent of tissue abnormalities without requiring extensive human
 annotation. From each tissue image, we will extract tiles, or
 sub-images, of 299x299 pixels, which we will input into the Inception v3
-deep neural network \{inception\}. The Inception v3 model is a
+deep neural network \cite{inception}. The Inception v3 model is a
 top-performing network for natural image classification
-\{farooq2020advanced\}. We will perform transfer learning
-\{dutta2022multi\}, where we remove the last layers of the model and
+\cite{farooq2020advanced}. We will perform transfer learning
+\cite{dutta2022multi}, where we remove the last layers of the model and
 retain the numerical features at the second-to-last layer as a black-box
 feature vector encoding histological image structure. This transfer
 learning approach has been applied heavily in the cancer field with
